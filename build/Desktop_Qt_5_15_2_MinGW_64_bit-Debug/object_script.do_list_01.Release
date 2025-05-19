@@ -8,6 +8,7 @@ release/main_window.o
 release/mainwindow.o
 release/myregister.o
 release/note.o
+release/taskframe.o
 release/todolist.o
 release/moc_calendar.o
 release/moc_four.o
@@ -16,4 +17,5 @@ release/moc_main_window.o
 release/moc_mainwindow.o
 release/moc_myregister.o
 release/moc_note.o
+release/moc_taskframe.o
 release/moc_todolist.o

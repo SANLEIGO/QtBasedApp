@@ -8,6 +8,8 @@
 #include<QLine>
 #include<QLabel>
 
+#include"globalValue.h"
+
 namespace Ui {
 class todoList;
 }

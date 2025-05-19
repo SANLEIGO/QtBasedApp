@@ -20,6 +20,16 @@ list_frame::list_frame() {
     QPushButton *addButton = new QPushButton("+", frame);
     layout->addWidget(addButton);
 
+    //分割线
+    QFrame *separator = new QFrame();
+    separator->setFrameShape(QFrame::HLine);
+    separator->setFrameShadow(QFrame::Sunken);
+    separator->setStyleSheet("color: #eee;");
+
+
+    QVBoxLayout * vlayout = new QVBoxLayout(frame);
+    vlayout->addLayout(layout);
+    vlayout->addWidget(separator);
 
 
 }

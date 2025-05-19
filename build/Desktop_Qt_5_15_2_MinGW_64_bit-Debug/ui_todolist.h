@@ -16,6 +16,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QVBoxLayout>
@@ -40,18 +41,17 @@ public:
     QSpacerItem *verticalSpacer_2;
     QTabWidget *tabWidget;
     QWidget *ALL;
-    QHBoxLayout *horizontalLayout_3;
-    QFrame *frame_5;
+    QVBoxLayout *verticalLayout_3;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
     QVBoxLayout *verticalLayout_2;
-    QSpacerItem *verticalSpacer_5;
     QFrame *frame_3;
     QHBoxLayout *horizontalLayout;
     QLineEdit *add_to;
     QSpacerItem *horizontalSpacer;
     QPushButton *pushButton_2;
     QSpacerItem *horizontalSpacer_2;
-    QSpacerItem *verticalSpacer_6;
-    QFrame *list_show;
+    QWidget *list_show;
     QWidget *tab_3;
     QWidget *tab_4;
     QWidget *tab_5;
@@ -61,7 +61,7 @@ public:
     {
         if (todoList->objectName().isEmpty())
             todoList->setObjectName(QString::fromUtf8("todoList"));
-        todoList->resize(608, 354);
+        todoList->resize(682, 432);
         horizontalLayout_2 = new QHBoxLayout(todoList);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         frame_2 = new QFrame(todoList);
@@ -116,20 +116,20 @@ public:
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         ALL = new QWidget();
         ALL->setObjectName(QString::fromUtf8("ALL"));
-        horizontalLayout_3 = new QHBoxLayout(ALL);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        frame_5 = new QFrame(ALL);
-        frame_5->setObjectName(QString::fromUtf8("frame_5"));
-        frame_5->setFrameShape(QFrame::StyledPanel);
-        frame_5->setFrameShadow(QFrame::Raised);
-        verticalLayout_2 = new QVBoxLayout(frame_5);
+        verticalLayout_3 = new QVBoxLayout(ALL);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        scrollArea = new QScrollArea(ALL);
+        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 562, 368));
+        verticalLayout_2 = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalSpacer_5 = new QSpacerItem(17, 15, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer_5);
-
-        frame_3 = new QFrame(frame_5);
+        frame_3 = new QFrame(scrollAreaWidgetContents);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setMinimumSize(QSize(0, 100));
+        frame_3->setMaximumSize(QSize(16777215, 100));
         frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(246, 246, 246);\n"
 "border: 1px solid #E0E0E0;\n"
 "    border - radius: 80px;\n"
@@ -144,6 +144,7 @@ public:
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         add_to = new QLineEdit(frame_3);
         add_to->setObjectName(QString::fromUtf8("add_to"));
+        add_to->setMinimumSize(QSize(40, 20));
 
         horizontalLayout->addWidget(add_to);
 
@@ -160,30 +161,21 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer_2);
 
-        horizontalLayout->setStretch(0, 10);
-        horizontalLayout->setStretch(1, 2);
+        horizontalLayout->setStretch(0, 3);
+        horizontalLayout->setStretch(1, 7);
         horizontalLayout->setStretch(2, 1);
         horizontalLayout->setStretch(3, 1);
 
         verticalLayout_2->addWidget(frame_3);
 
-        verticalSpacer_6 = new QSpacerItem(20, 106, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer_6);
-
-        list_show = new QFrame(frame_5);
+        list_show = new QWidget(scrollAreaWidgetContents);
         list_show->setObjectName(QString::fromUtf8("list_show"));
-        list_show->setFrameShape(QFrame::StyledPanel);
-        list_show->setFrameShadow(QFrame::Raised);
 
         verticalLayout_2->addWidget(list_show);
 
-        verticalLayout_2->setStretch(0, 1);
-        verticalLayout_2->setStretch(1, 1);
-        verticalLayout_2->setStretch(2, 1);
-        verticalLayout_2->setStretch(3, 10);
+        scrollArea->setWidget(scrollAreaWidgetContents);
 
-        horizontalLayout_3->addWidget(frame_5);
+        verticalLayout_3->addWidget(scrollArea);
 
         tabWidget->addTab(ALL, QString());
         tab_3 = new QWidget();

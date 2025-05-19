@@ -6,6 +6,11 @@
 #include "main_window.h"
 #include"myregister.h"
 
+
+#include"list_frame.h"
+
+#include"taskframe.h"
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -20,9 +25,12 @@ int main(int argc, char *argv[])
 //    l.show();
 
 //    myregister m;
-//    m.show();
+//    m.show()
 
+//    list_frame l;
 
+ //   taskFrame t;
+ //  t.show();
 
 
     return a.exec();

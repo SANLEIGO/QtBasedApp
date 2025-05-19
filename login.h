@@ -29,6 +29,7 @@ private slots:
 
 private:
     Ui::login *ui;
+    QString Account;
 };
 
 #endif // LOGIN_H

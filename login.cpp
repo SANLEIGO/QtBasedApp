@@ -1,11 +1,13 @@
 #include "login.h"
 #include "ui_login.h"
 #include "databasemanager.h"
+#include"globalValue.h"
 
 login::login(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::login)
 {
+    Account = "null";
     ui->setupUi(this);
 }
 
@@ -35,8 +37,8 @@ void login::on_pushButton_3_clicked()
             while(query.next()){
                 if(query.value(0).toString()==account && query.value(1).toString()==password){
                     sign = 1;
+                    staticVal::setAccount(account);
                     QMessageBox::information(this,"登录提示","登录成功");
-
                 }
 
             }

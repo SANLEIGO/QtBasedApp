@@ -12,6 +12,7 @@ SOURCES += \
     calendar.cpp \
     databasemanager.cpp \
     four.cpp \
+    globalValue.cpp \
     list_frame.cpp \
     login.cpp \
     main.cpp \
@@ -19,18 +20,21 @@ SOURCES += \
     mainwindow.cpp \
     myregister.cpp \
     note.cpp \
+    taskframe.cpp \
     todolist.cpp
 
 HEADERS += \
     calendar.h \
     databasemanager.h \
     four.h \
+    globalValue.h \
     list_frame.h \
     login.h \
     main_window.h \
     mainwindow.h \
     myregister.h \
     note.h \
+    taskframe.h \
     todolist.h
 
 FORMS += \
@@ -41,6 +45,7 @@ FORMS += \
     mainwindow.ui \
     myregister.ui \
     note.ui \
+    taskframe.ui \
     todolist.ui
 
 # Default rules for deployment.
