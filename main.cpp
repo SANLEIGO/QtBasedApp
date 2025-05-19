@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    //主函数
 
  //   MainWindow w;
  //   w.show();
