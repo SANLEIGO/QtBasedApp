@@ -2,11 +2,11 @@
 #define NOTE_H
 
 #include <QWidget>
-#include <QFileSystemModel>
 #include <QStandardItemModel>
-#include <QFile>
-#include <QTextStream>
 #include <QString>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QShowEvent>
 
 namespace Ui {
 class Note;
@@ -20,25 +20,24 @@ public:
     explicit Note(QWidget *parent = nullptr);
     ~Note();
 
+protected:
+    void showEvent(QShowEvent *event) override;
+
 private slots:
-    void on_createFolderButton_clicked();
-    void on_importFolderButton_clicked();
     void on_newFileButton_clicked();
     void on_saveButton_clicked();
-    void on_folderTreeView_clicked(const QModelIndex &index);
     void on_fileListView_clicked(const QModelIndex &index);
 
 private:
     Ui::Note *ui;
-    QFileSystemModel *folderModel;
     QStandardItemModel *fileModel;
-    QString currentFolderPath;
-    QString currentFilePath;
-    
-    void loadTextFile(const QString &filePath);
-    void updateFileList(const QString &folderPath);
-    void saveTextFile(const QString &filePath, const QString &content);
-    bool isTxtFile(const QString &fileName);
+    QString currentFileName;
+    QString currentFileContent;
+
+    void loadNotesFromDatabase(); // 加载当前用户所有笔记
+    void loadNoteContent(const QString &fileName); // 加载单个笔记内容
+    void saveNoteToDatabase(const QString &fileName, const QString &content); // 保存笔记
+    void updateFileList(); // 刷新文件列表
 };
 
 #endif // NOTE_H

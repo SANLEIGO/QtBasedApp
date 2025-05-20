@@ -22,6 +22,11 @@ public:
     explicit main_window(QWidget *parent = nullptr);
     ~main_window();
 
+private slots:
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::main_window *ui;
     todoList* page1;
