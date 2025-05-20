@@ -6,16 +6,15 @@ release/list_frame.o
 release/login.o
 release/main.o
 release/main_window.o
-release/mainwindow.o
 release/myregister.o
 release/note.o
+release/qselect.o
 release/taskframe.o
 release/todolist.o
 release/moc_calendar.o
 release/moc_four.o
 release/moc_login.o
 release/moc_main_window.o
-release/moc_mainwindow.o
 release/moc_myregister.o
 release/moc_note.o
 release/moc_taskframe.o

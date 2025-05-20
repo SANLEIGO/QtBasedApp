@@ -17,9 +17,9 @@ SOURCES += \
     login.cpp \
     main.cpp \
     main_window.cpp \
-    mainwindow.cpp \
     myregister.cpp \
     note.cpp \
+    qselect.cpp \
     taskframe.cpp \
     todolist.cpp
 
@@ -31,9 +31,9 @@ HEADERS += \
     list_frame.h \
     login.h \
     main_window.h \
-    mainwindow.h \
     myregister.h \
     note.h \
+    qselect.h \
     taskframe.h \
     todolist.h
 
@@ -42,7 +42,6 @@ FORMS += \
     four.ui \
     login.ui \
     main_window.ui \
-    mainwindow.ui \
     myregister.ui \
     note.ui \
     taskframe.ui \
