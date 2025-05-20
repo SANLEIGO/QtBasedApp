@@ -2,6 +2,7 @@
 #define TASKFRAME_H
 
 #include <QFrame>
+#include<QDateTime>
 
 namespace Ui {
 class taskFrame;
@@ -13,6 +14,7 @@ class taskFrame : public QFrame
 
 public:
     explicit taskFrame(QWidget *parent = nullptr);
+    taskFrame(QString name,QString time);
     ~taskFrame();
 
 private:

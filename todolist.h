@@ -7,8 +7,11 @@
 #include<QCheckBox>
 #include<QLine>
 #include<QLabel>
+#include<QSqlDatabase>
+#include<QSqlQuery>
+#include <QSqlError>
 
-#include"globalValue.h"
+
 
 namespace Ui {
 class todoList;

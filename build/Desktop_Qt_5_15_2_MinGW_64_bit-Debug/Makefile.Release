@@ -53,6 +53,7 @@ OBJECTS_DIR   = release
 SOURCES       = ..\..\calendar.cpp \
 		..\..\databasemanager.cpp \
 		..\..\four.cpp \
+		..\..\globalValue.cpp \
 		..\..\list_frame.cpp \
 		..\..\login.cpp \
 		..\..\main.cpp \
@@ -73,6 +74,7 @@ SOURCES       = ..\..\calendar.cpp \
 OBJECTS       = release/calendar.o \
 		release/databasemanager.o \
 		release/four.o \
+		release/globalValue.o \
 		release/list_frame.o \
 		release/login.o \
 		release/main.o \
@@ -95,6 +97,7 @@ OBJECTS       = release/calendar.o \
 DIST          =  ..\..\calendar.h \
 		..\..\databasemanager.h \
 		..\..\four.h \
+		..\..\globalValue.h \
 		..\..\list_frame.h \
 		..\..\login.h \
 		..\..\main_window.h \
@@ -105,6 +108,7 @@ DIST          =  ..\..\calendar.h \
 		..\..\todolist.h ..\..\calendar.cpp \
 		..\..\databasemanager.cpp \
 		..\..\four.cpp \
+		..\..\globalValue.cpp \
 		..\..\list_frame.cpp \
 		..\..\login.cpp \
 		..\..\main.cpp \
@@ -133,10 +137,10 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) do_list_01.zip $(SOURCES) $(DIST) ..\..\..\..\do_list_01.pro ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\spec_pre.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\qdevice.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\device_config.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\sanitize.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\gcc-base.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\g++-base.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\angle.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\windows_vulkan_sdk.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\windows-vulkan.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\g++-win32.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\windows-desktop.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\qconfig.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_accessibility_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bodymovin_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_charts.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_charts_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_datavisualization.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_datavisualization_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_edid_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_egl_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fb_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttracker.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttracker_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttrackerqml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttrackerqml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_networkauth.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_networkauth_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_purchasing.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_purchasing_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3d.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3d_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dassetimport.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3drender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3drender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3druntimerender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dutils.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dutils_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickshapes_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_script.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_script_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scripttools.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_theme_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_virtualkeyboard.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_vulkan_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_zlib_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qt_functions.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qt_config.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\win32-g++\qmake.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\exclusive_builds.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\toolchain.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\default_pre.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\default_pre.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\resolve_config.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\default_post.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\build_pass.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qml_debug.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\precompile_header.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\warn_on.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qt.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\resources_functions.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\resources.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\moc.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\opengl.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\uic.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qmake_use.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\file_copies.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\windows.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\testcase_targets.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\exceptions.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\yacc.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\lex.prf ..\..\do_list_01.pro ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Widgets.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Gui.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Sql.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Core.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\qtmain.prl    ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\data\dummy.cpp ..\..\calendar.h ..\..\databasemanager.h ..\..\four.h ..\..\list_frame.h ..\..\login.h ..\..\main_window.h ..\..\mainwindow.h ..\..\myregister.h ..\..\note.h ..\..\taskframe.h ..\..\todolist.h  ..\..\calendar.cpp ..\..\databasemanager.cpp ..\..\four.cpp ..\..\list_frame.cpp ..\..\login.cpp ..\..\main.cpp ..\..\main_window.cpp ..\..\mainwindow.cpp ..\..\myregister.cpp ..\..\note.cpp ..\..\taskframe.cpp ..\..\todolist.cpp ..\..\calendar.ui ..\..\four.ui ..\..\login.ui ..\..\main_window.ui ..\..\mainwindow.ui ..\..\myregister.ui ..\..\note.ui ..\..\taskframe.ui ..\..\todolist.ui    
+	$(ZIP) do_list_01.zip $(SOURCES) $(DIST) ..\..\..\..\do_list_01.pro ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\spec_pre.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\qdevice.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\device_config.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\sanitize.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\gcc-base.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\g++-base.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\angle.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\windows_vulkan_sdk.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\windows-vulkan.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\g++-win32.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\common\windows-desktop.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\qconfig.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_accessibility_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bodymovin_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_charts.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_charts_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_datavisualization.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_datavisualization_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_edid_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_egl_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fb_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttracker.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttracker_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttrackerqml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_insighttrackerqml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_networkauth.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_networkauth_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_purchasing.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_purchasing_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3d.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3d_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dassetimport.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3drender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3drender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3druntimerender.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dutils.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick3dutils_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickshapes_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_script.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_script_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scripttools.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_theme_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_virtualkeyboard.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_vulkan_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\modules\qt_lib_zlib_private.pri ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qt_functions.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qt_config.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\win32-g++\qmake.conf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\exclusive_builds.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\toolchain.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\default_pre.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\default_pre.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\resolve_config.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\default_post.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\build_pass.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qml_debug.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\precompile_header.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\warn_on.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qt.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\resources_functions.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\resources.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\moc.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\opengl.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\uic.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\qmake_use.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\file_copies.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\win32\windows.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\testcase_targets.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\exceptions.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\yacc.prf ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\lex.prf ..\..\do_list_01.pro ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Widgets.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Gui.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Sql.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\Qt5Core.prl ..\..\..\..\QT2\5.15.2\mingw81_64\lib\qtmain.prl    ..\..\..\..\QT2\5.15.2\mingw81_64\mkspecs\features\data\dummy.cpp ..\..\calendar.h ..\..\databasemanager.h ..\..\four.h ..\..\globalValue.h ..\..\list_frame.h ..\..\login.h ..\..\main_window.h ..\..\mainwindow.h ..\..\myregister.h ..\..\note.h ..\..\taskframe.h ..\..\todolist.h  ..\..\calendar.cpp ..\..\databasemanager.cpp ..\..\four.cpp ..\..\globalValue.cpp ..\..\list_frame.cpp ..\..\login.cpp ..\..\main.cpp ..\..\main_window.cpp ..\..\mainwindow.cpp ..\..\myregister.cpp ..\..\note.cpp ..\..\taskframe.cpp ..\..\todolist.cpp ..\..\calendar.ui ..\..\four.ui ..\..\login.ui ..\..\main_window.ui ..\..\mainwindow.ui ..\..\myregister.ui ..\..\note.ui ..\..\taskframe.ui ..\..\todolist.ui    
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\calendar.o release\databasemanager.o release\four.o release\list_frame.o release\login.o release\main.o release\main_window.o release\mainwindow.o release\myregister.o release\note.o release\taskframe.o release\todolist.o release\moc_calendar.o release\moc_four.o release\moc_login.o release\moc_main_window.o release\moc_mainwindow.o release\moc_myregister.o release\moc_note.o release\moc_taskframe.o release\moc_todolist.o
+	-$(DEL_FILE) release\calendar.o release\databasemanager.o release\four.o release\globalValue.o release\list_frame.o release\login.o release\main.o release\main_window.o release\mainwindow.o release\myregister.o release\note.o release\taskframe.o release\todolist.o release\moc_calendar.o release\moc_four.o release\moc_login.o release\moc_main_window.o release\moc_mainwindow.o release\moc_myregister.o release\moc_note.o release\moc_taskframe.o release\moc_todolist.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -623,6 +627,12 @@ release/moc_main_window.cpp: ../../main_window.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		release/moc_predefs.h \
 		../../../../QT2/5.15.2/mingw81_64/bin/moc.exe
 	G:\QT2\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include G:/qt_projects/do_list_01/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -IG:/QT2/5.15.2/mingw81_64/mkspecs/win32-g++ -IG:/qt_projects/do_list_01 -IG:/QT2/5.15.2/mingw81_64/include -IG:/QT2/5.15.2/mingw81_64/include/QtWidgets -IG:/QT2/5.15.2/mingw81_64/include/QtGui -IG:/QT2/5.15.2/mingw81_64/include/QtANGLE -IG:/QT2/5.15.2/mingw81_64/include/QtSql -IG:/QT2/5.15.2/mingw81_64/include/QtCore -I. -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IG:/QT/Tools/mingw810_64/x86_64-w64-mingw32/include ..\..\main_window.h -o release\moc_main_window.cpp
@@ -752,6 +762,12 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		release/moc_predefs.h \
 		../../../../QT2/5.15.2/mingw81_64/bin/moc.exe
 	G:\QT2\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include G:/qt_projects/do_list_01/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -IG:/QT2/5.15.2/mingw81_64/mkspecs/win32-g++ -IG:/qt_projects/do_list_01 -IG:/QT2/5.15.2/mingw81_64/include -IG:/QT2/5.15.2/mingw81_64/include/QtWidgets -IG:/QT2/5.15.2/mingw81_64/include/QtGui -IG:/QT2/5.15.2/mingw81_64/include/QtANGLE -IG:/QT2/5.15.2/mingw81_64/include/QtSql -IG:/QT2/5.15.2/mingw81_64/include/QtCore -I. -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IG:/QT/Tools/mingw810_64/x86_64-w64-mingw32/include ..\..\mainwindow.h -o release\moc_mainwindow.cpp
@@ -1087,6 +1103,8 @@ release/moc_taskframe.cpp: ../../taskframe.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QDateTime \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qdatetime.h \
 		release/moc_predefs.h \
 		../../../../QT2/5.15.2/mingw81_64/bin/moc.exe
 	G:\QT2\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include G:/qt_projects/do_list_01/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -IG:/QT2/5.15.2/mingw81_64/mkspecs/win32-g++ -IG:/qt_projects/do_list_01 -IG:/QT2/5.15.2/mingw81_64/include -IG:/QT2/5.15.2/mingw81_64/include/QtWidgets -IG:/QT2/5.15.2/mingw81_64/include/QtGui -IG:/QT2/5.15.2/mingw81_64/include/QtANGLE -IG:/QT2/5.15.2/mingw81_64/include/QtSql -IG:/QT2/5.15.2/mingw81_64/include/QtCore -I. -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IG:/QT/Tools/mingw810_64/x86_64-w64-mingw32/include ..\..\taskframe.h -o release\moc_taskframe.cpp
@@ -1209,6 +1227,12 @@ release/moc_todolist.cpp: ../../todolist.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		release/moc_predefs.h \
 		../../../../QT2/5.15.2/mingw81_64/bin/moc.exe
 	G:\QT2\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include G:/qt_projects/do_list_01/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -IG:/QT2/5.15.2/mingw81_64/mkspecs/win32-g++ -IG:/qt_projects/do_list_01 -IG:/QT2/5.15.2/mingw81_64/include -IG:/QT2/5.15.2/mingw81_64/include/QtWidgets -IG:/QT2/5.15.2/mingw81_64/include/QtGui -IG:/QT2/5.15.2/mingw81_64/include/QtANGLE -IG:/QT2/5.15.2/mingw81_64/include/QtSql -IG:/QT2/5.15.2/mingw81_64/include/QtCore -I. -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IG:/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IG:/QT/Tools/mingw810_64/x86_64-w64-mingw32/include ..\..\todolist.h -o release\moc_todolist.cpp
@@ -1592,6 +1616,41 @@ release/four.o: ../../four.cpp ../../four.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\four.o ..\..\four.cpp
 
+release/globalValue.o: ../../globalValue.cpp ../../globalValue.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QString \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qstring.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qchar.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qconfig.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qtcore-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qsystemdetection.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qprocessordetection.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qcompilerdetection.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qtypeinfo.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qsysinfo.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qlogging.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qflags.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qatomic.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qbasicatomic.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qgenericatomic.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qatomic_cxx11.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qatomic_msvc.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qmutex.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qstringview.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\globalValue.o ..\..\globalValue.cpp
+
 release/list_frame.o: ../../list_frame.cpp ../../list_frame.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
@@ -1861,7 +1920,8 @@ release/login.o: ../../login.cpp ../../login.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../databasemanager.h
+		../../databasemanager.h \
+		../../globalValue.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\login.o ..\..\login.cpp
 
 release/main.o: ../../main.cpp ../../mainwindow.h \
@@ -1989,6 +2049,12 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QApplication \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -1998,15 +2064,9 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
 		../../login.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QString \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QDateTime \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qdatetime.h \
 		../../main_window.h \
@@ -2140,6 +2200,12 @@ release/main_window.o: ../../main_window.cpp ../../main_window.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		ui_main_window.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -2282,6 +2348,12 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		ui_mainwindow.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -2675,7 +2747,36 @@ release/taskframe.o: ../../taskframe.cpp ../../taskframe.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
-		ui_taskframe.h
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QDateTime \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qdatetime.h \
+		ui_taskframe.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QVariant \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QApplication \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QCheckBox \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qcheckbox.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qicon.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qpen.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\taskframe.o ..\..\taskframe.cpp
 
 release/todolist.o: ../../todolist.cpp ../../todolist.h \
@@ -2796,6 +2897,12 @@ release/todolist.o: ../../todolist.cpp ../../todolist.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QLine \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QLabel \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlDatabase \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqldatabase.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsqlglobal.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qtsql-config.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/QSqlQuery \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtSql/qsqlquery.h \
 		ui_todolist.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -2814,10 +2921,18 @@ release/todolist.o: ../../todolist.cpp ../../todolist.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QScrollArea \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QTabWidget \
 		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
+		../../taskframe.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QDateTime \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/qdatetime.h \
+		../../databasemanager.h \
+		../../../../../../QT2/5.15.2/mingw81_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\todolist.o ..\..\todolist.cpp
 
 release/moc_calendar.o: release/moc_calendar.cpp 

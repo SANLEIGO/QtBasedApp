@@ -1,6 +1,7 @@
 debug/calendar.o
 debug/databasemanager.o
 debug/four.o
+debug/globalValue.o
 debug/list_frame.o
 debug/login.o
 debug/main.o

@@ -39,6 +39,7 @@ void login::on_pushButton_3_clicked()
                     sign = 1;
                     staticVal::setAccount(account);
                     QMessageBox::information(this,"登录提示","登录成功");
+                    emit loginSuccess();
                 }
 
             }
@@ -56,6 +57,8 @@ void login::on_pushButton_3_clicked()
     else{
         QMessageBox::information(this,"登录提示","服务器忙");
     }
+
+
 
 }
 

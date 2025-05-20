@@ -31,13 +31,13 @@ public:
     QSpacerItem *horizontalSpacer;
     QFrame *frame;
     QHBoxLayout *horizontalLayout;
-    QCheckBox *checkBox;
-    QLineEdit *lineEdit;
+    QCheckBox *check_over;
+    QLineEdit *content;
     QSpacerItem *horizontalSpacer_2;
     QFrame *frame_3;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
-    QLabel *label_2;
+    QLabel *time_show;
     QFrame *line;
 
     void setupUi(QFrame *taskFrame)
@@ -59,7 +59,7 @@ public:
         frame_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_3 = new QHBoxLayout(frame_2);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        horizontalSpacer = new QSpacerItem(32, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer = new QSpacerItem(33, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_3->addItem(horizontalSpacer);
 
@@ -69,21 +69,21 @@ public:
         frame->setFrameShadow(QFrame::Raised);
         horizontalLayout = new QHBoxLayout(frame);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        checkBox = new QCheckBox(frame);
-        checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        check_over = new QCheckBox(frame);
+        check_over->setObjectName(QString::fromUtf8("check_over"));
 
-        horizontalLayout->addWidget(checkBox);
+        horizontalLayout->addWidget(check_over);
 
-        lineEdit = new QLineEdit(frame);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setStyleSheet(QString::fromUtf8("border: none;"));
+        content = new QLineEdit(frame);
+        content->setObjectName(QString::fromUtf8("content"));
+        content->setStyleSheet(QString::fromUtf8("border: none;"));
 
-        horizontalLayout->addWidget(lineEdit);
+        horizontalLayout->addWidget(content);
 
 
         horizontalLayout_3->addWidget(frame);
 
-        horizontalSpacer_2 = new QSpacerItem(137, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_2 = new QSpacerItem(142, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_3->addItem(horizontalSpacer_2);
 
@@ -98,10 +98,10 @@ public:
 
         horizontalLayout_2->addWidget(label);
 
-        label_2 = new QLabel(frame_3);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        time_show = new QLabel(frame_3);
+        time_show->setObjectName(QString::fromUtf8("time_show"));
 
-        horizontalLayout_2->addWidget(label_2);
+        horizontalLayout_2->addWidget(time_show);
 
 
         horizontalLayout_3->addWidget(frame_3);
@@ -129,9 +129,9 @@ public:
     void retranslateUi(QFrame *taskFrame)
     {
         taskFrame->setWindowTitle(QCoreApplication::translate("taskFrame", "Frame", nullptr));
-        checkBox->setText(QString());
-        label->setText(QCoreApplication::translate("taskFrame", "TextLabel", nullptr));
-        label_2->setText(QCoreApplication::translate("taskFrame", "TextLabel", nullptr));
+        check_over->setText(QString());
+        label->setText(QCoreApplication::translate("taskFrame", "add", nullptr));
+        time_show->setText(QCoreApplication::translate("taskFrame", "TextLabel", nullptr));
     } // retranslateUi
 
 };

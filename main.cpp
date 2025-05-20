@@ -10,6 +10,7 @@
 #include"list_frame.h"
 
 #include"taskframe.h"
+#include"globalValue.h"
 
 int main(int argc, char *argv[])
 {
@@ -18,8 +19,16 @@ int main(int argc, char *argv[])
  //   MainWindow w;
  //   w.show();
 
+    login l;
     main_window m;
-    m.show();
+    l.show();
+    QObject::connect(&l, &login::loginSuccess, &l, [&l, &m]() {
+        l.close();
+        m.show();
+    });
+
+
+
 
 //    login l;
 //    l.show();

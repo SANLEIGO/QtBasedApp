@@ -71,7 +71,7 @@
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QCheckBox" name="checkBox">
+          <widget class="QCheckBox" name="check_over">
            <property name="text">
             <string/>
            </property>

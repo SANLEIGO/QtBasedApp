@@ -24,6 +24,9 @@ public:
     explicit login(QWidget *parent = nullptr);
     ~login();
 
+signals:
+    void loginSuccess();
+
 private slots:
     void on_pushButton_3_clicked();
 

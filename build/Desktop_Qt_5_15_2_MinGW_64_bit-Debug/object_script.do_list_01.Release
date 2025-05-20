@@ -1,6 +1,7 @@
 release/calendar.o
 release/databasemanager.o
 release/four.o
+release/globalValue.o
 release/list_frame.o
 release/login.o
 release/main.o
