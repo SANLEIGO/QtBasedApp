@@ -54,7 +54,7 @@ public:
     {
         if (four->objectName().isEmpty())
             four->setObjectName(QString::fromUtf8("four"));
-        four->resize(693, 382);
+        four->resize(1529, 938);
         frame_4 = new QFrame(four);
         frame_4->setObjectName(QString::fromUtf8("frame_4"));
         frame_4->setGeometry(QRect(470, 244, 282, 249));

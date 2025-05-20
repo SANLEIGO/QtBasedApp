@@ -23,7 +23,7 @@ public:
     {
         if (calendar->objectName().isEmpty())
             calendar->setObjectName(QString::fromUtf8("calendar"));
-        calendar->resize(400, 300);
+        calendar->resize(1098, 635);
 
         retranslateUi(calendar);
 
