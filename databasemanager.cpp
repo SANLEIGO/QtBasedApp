@@ -28,10 +28,10 @@ bool databaseManager::init() {
     // 配置ODBC连接参数
     QString connectString =
         "DRIVER={MySQL ODBC 8.0 Unicode Driver};"  // 驱动名称（需与实际安装的驱动名称一致）
-        "SERVER=192.168.193.125;"      // 服务器地址
+        "SERVER=100.80.134.24;"      // 服务器地址
         "PORT=4406;"            // 端口
         "DATABASE=dolist;"      // 数据库名
-        "USER=qt_user;"           // 用户名
+        "USER=root;"           // 用户名
         "PASSWORD=Rinatech0800%;";// 密码
     db.setDatabaseName(connectString);
 

@@ -55,20 +55,15 @@ public:
     QSpacerItem *horizontalSpacer_18;
     QFrame *frame_11;
     QHBoxLayout *horizontalLayout_17;
-    QFrame *frame_10;
-    QHBoxLayout *horizontalLayout_16;
-    QSpacerItem *horizontalSpacer_21;
-    QPushButton *pushButton_2;
-    QSpacerItem *horizontalSpacer_11;
     QFrame *frame_9;
     QHBoxLayout *horizontalLayout_15;
     QSpacerItem *horizontalSpacer_19;
-    QPushButton *pushButton;
+    QPushButton *pushButton_3;
     QSpacerItem *horizontalSpacer_20;
     QFrame *frame_12;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer_22;
-    QPushButton *pushButton_3;
+    QPushButton *pushButton;
     QSpacerItem *horizontalSpacer_23;
     QSpacerItem *verticalSpacer_4;
     QFrame *frame_3;
@@ -222,31 +217,6 @@ public:
         frame_11->setFrameShadow(QFrame::Raised);
         horizontalLayout_17 = new QHBoxLayout(frame_11);
         horizontalLayout_17->setObjectName(QString::fromUtf8("horizontalLayout_17"));
-        frame_10 = new QFrame(frame_11);
-        frame_10->setObjectName(QString::fromUtf8("frame_10"));
-        frame_10->setFrameShape(QFrame::StyledPanel);
-        frame_10->setFrameShadow(QFrame::Raised);
-        horizontalLayout_16 = new QHBoxLayout(frame_10);
-        horizontalLayout_16->setObjectName(QString::fromUtf8("horizontalLayout_16"));
-        horizontalSpacer_21 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_16->addItem(horizontalSpacer_21);
-
-        pushButton_2 = new QPushButton(frame_10);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-
-        horizontalLayout_16->addWidget(pushButton_2);
-
-        horizontalSpacer_11 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_16->addItem(horizontalSpacer_11);
-
-        horizontalLayout_16->setStretch(0, 1);
-        horizontalLayout_16->setStretch(1, 2);
-        horizontalLayout_16->setStretch(2, 1);
-
-        horizontalLayout_17->addWidget(frame_10);
-
         frame_9 = new QFrame(frame_11);
         frame_9->setObjectName(QString::fromUtf8("frame_9"));
         frame_9->setFrameShape(QFrame::StyledPanel);
@@ -257,23 +227,22 @@ public:
 
         horizontalLayout_15->addItem(horizontalSpacer_19);
 
-        pushButton = new QPushButton(frame_9);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton_3 = new QPushButton(frame_9);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setIconSize(QSize(20, 20));
 
-        horizontalLayout_15->addWidget(pushButton);
+        horizontalLayout_15->addWidget(pushButton_3);
 
         horizontalSpacer_20 = new QSpacerItem(32, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_15->addItem(horizontalSpacer_20);
 
         horizontalLayout_15->setStretch(0, 1);
-        horizontalLayout_15->setStretch(1, 2);
         horizontalLayout_15->setStretch(2, 1);
 
         horizontalLayout_17->addWidget(frame_9);
 
         horizontalLayout_17->setStretch(0, 1);
-        horizontalLayout_17->setStretch(1, 1);
 
         gridLayout->addWidget(frame_11, 6, 0, 1, 1);
 
@@ -287,11 +256,10 @@ public:
 
         horizontalLayout_4->addItem(horizontalSpacer_22);
 
-        pushButton_3 = new QPushButton(frame_12);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setIconSize(QSize(20, 20));
+        pushButton = new QPushButton(frame_12);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        horizontalLayout_4->addWidget(pushButton_3);
+        horizontalLayout_4->addWidget(pushButton);
 
         horizontalSpacer_23 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -333,13 +301,12 @@ public:
 
     void retranslateUi(QWidget *login)
     {
-        login->setWindowTitle(QCoreApplication::translate("login", "Form", nullptr));
-        label->setText(QCoreApplication::translate("login", "             LOGIN", nullptr));
+        login->setWindowTitle(QCoreApplication::translate("login", "LOGIN OR REGISTER", nullptr));
+        label->setText(QCoreApplication::translate("login", "LOGIN OR REGISTER", nullptr));
         label_2->setText(QCoreApplication::translate("login", "Account", nullptr));
         label_9->setText(QCoreApplication::translate("login", "Password", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("login", "Register?", nullptr));
-        pushButton->setText(QCoreApplication::translate("login", "Forget Password?", nullptr));
         pushButton_3->setText(QCoreApplication::translate("login", "Login", nullptr));
+        pushButton->setText(QCoreApplication::translate("login", "Forget Password?", nullptr));
     } // retranslateUi
 
 };
