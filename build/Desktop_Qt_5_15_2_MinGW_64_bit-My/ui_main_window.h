@@ -35,7 +35,7 @@ public:
     QSpacerItem *verticalSpacer_4;
     QPushButton *pushButton_3;
     QSpacerItem *verticalSpacer_3;
-    QPushButton *pushButton_4;
+    QPushButton *pomodoroButton;
     QSpacerItem *verticalSpacer_2;
     QStackedWidget *stackedWidget;
     QWidget *page;
@@ -91,10 +91,10 @@ public:
 
         verticalLayout->addItem(verticalSpacer_3);
 
-        pushButton_4 = new QPushButton(widget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pomodoroButton = new QPushButton(widget);
+        pomodoroButton->setObjectName(QString::fromUtf8("pomodoroButton"));
 
-        verticalLayout->addWidget(pushButton_4);
+        verticalLayout->addWidget(pomodoroButton);
 
         verticalSpacer_2 = new QSpacerItem(20, 483, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -139,7 +139,7 @@ public:
         pushButton->setText(QCoreApplication::translate("main_window", "PushButton", nullptr));
         pushButton_2->setText(QCoreApplication::translate("main_window", "PushButton", nullptr));
         pushButton_3->setText(QCoreApplication::translate("main_window", "Notes", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("main_window", "PushButton", nullptr));
+        pomodoroButton->setText(QCoreApplication::translate("main_window", "\347\225\252\350\214\204\351\222\237", nullptr));
     } // retranslateUi
 
 };

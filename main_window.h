@@ -8,6 +8,7 @@
 #include "calendar.h"
 #include "note.h"
 #include "todolist.h"
+#include "pomodoro_widget.h"
 
 
 namespace Ui {
@@ -27,12 +28,15 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void showPomodoroWidget();
+
 private:
     Ui::main_window *ui;
     todoList* page1;
     calendar* page2;
     Note*   page3;
-    four*   page4;
+    PomodoroWidget* page4;
+    PomodoroWidget *pomodoroWidget;
 
 };
 

@@ -1,5 +1,7 @@
 #include "main_window.h"
 #include "ui_main_window.h"
+#include "pomodoro_widget.h"
+#include "globalValue.h"
 
 main_window::main_window(QWidget *parent)
     : QWidget(parent)
@@ -9,16 +11,19 @@ main_window::main_window(QWidget *parent)
     page1 = new todoList(this);
     page2 = new calendar(this);
     page3 = new Note(this);
-    page4 = new four(this);
-
+    page4 = new PomodoroWidget(staticVal::getAccount(), this);
 
     //设置四个分页面
-    ui->stackedWidget->insertWidget(0,page1);
-    ui->stackedWidget->insertWidget(1,page2);
-    ui->stackedWidget->insertWidget(2,page3);
-    ui->stackedWidget->insertWidget(3,page4);
+    ui->stackedWidget->insertWidget(0, page1);
+    ui->stackedWidget->insertWidget(1, page2);
+    ui->stackedWidget->insertWidget(2, page3);
+    ui->stackedWidget->insertWidget(3, page4);
     ui->stackedWidget->setCurrentIndex(0);
 
+    connect(ui->pushButton, &QPushButton::clicked, this, [this]() { ui->stackedWidget->setCurrentIndex(0); });
+    connect(ui->pushButton_2, &QPushButton::clicked, this, [this]() { ui->stackedWidget->setCurrentIndex(1); });
+    connect(ui->pushButton_3, &QPushButton::clicked, this, [this]() { ui->stackedWidget->setCurrentIndex(2); });
+    connect(ui->pomodoroButton, &QPushButton::clicked, this, [this]() { ui->stackedWidget->setCurrentIndex(3); });
 }
 
 main_window::~main_window()
