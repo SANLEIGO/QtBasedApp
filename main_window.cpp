@@ -13,7 +13,7 @@ main_window::main_window(QWidget *parent)
     page3 = new Note(this);
     page4 = new PomodoroWidget(staticVal::getAccount(), this);
 
-    //设置四个分页面
+    //设置四个分页面阿萨
     ui->stackedWidget->insertWidget(0, page1);
     ui->stackedWidget->insertWidget(1, page2);
     ui->stackedWidget->insertWidget(2, page3);
