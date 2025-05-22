@@ -1,22 +1,18 @@
 #include "databasemanager.h"
-
-#include <QSqlDatabase>
-#include <QString>
-#include <QDebug> // 用于输出调试信息
-#include <QSqlError>
+#include "QSqlError"
 
 QSqlDatabase databaseManager::db;  // 静态成员变量定义
 
 
 // bool databaseManager::init() {
-//     db = QSqlDatabase::addDatabase("QODBC");
+//     db = QSqlDatabase::addDatabase("QMYSQL");
 //     db.setDatabaseName("dolist");
 //     db.setHostName("192.168.193.125");
 //     db.setPort(4406);
 //     db.setUserName("root");
 //     db.setPassword("Rinatech0800%");
 //     return db.open();
-// } 劫匪测试
+// }
 
 bool databaseManager::init() {
     // 移除可能存在的旧连接（如果这是重新初始化）
@@ -66,6 +62,17 @@ bool databaseManager::init() {
 }
 
 
+
+
+
+// bool databaseManager::init() {
+//     db = QSqlDatabase::addDatabase("QMYSQL");
+//     db.setDatabaseName("dolilt");
+//     db.setHostName("localhost");
+//     db.setUserName("qt_user");
+//     db.setPassword("123456");
+//     return db.open();
+// }
 
 
 QSqlDatabase& databaseManager::getDataBase() {

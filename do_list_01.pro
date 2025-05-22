@@ -19,11 +19,13 @@ SOURCES += \
     main_window.cpp \
     myregister.cpp \
     note.cpp \
-    qselect.cpp \
-    taskframe.cpp \
-    todolist.cpp \
+    pomodoro_history_widget.cpp \
     pomodoro_widget.cpp \
-    pomodoro_history_widget.cpp
+    qsql.cpp \
+    taskframe.cpp \
+    taskinfo.cpp \
+    test.cpp \
+    todolist.cpp
 
 HEADERS += \
     calendar.h \
@@ -35,11 +37,13 @@ HEADERS += \
     main_window.h \
     myregister.h \
     note.h \
-    qselect.h \
-    taskframe.h \
-    todolist.h \
+    pomodoro_history_widget.h \
     pomodoro_widget.h \
-    pomodoro_history_widget.h
+    qsql.h \
+    taskframe.h \
+    taskinfo.h \
+    test.h \
+    todolist.h
 
 FORMS += \
     calendar.ui \
@@ -48,10 +52,12 @@ FORMS += \
     main_window.ui \
     myregister.ui \
     note.ui \
-    taskframe.ui \
-    todolist.ui \
+    pomodoro_history_widget.ui \
     pomodoro_widget.ui \
-    pomodoro_history_widget.ui
+    taskframe.ui \
+    taskinfo.ui \
+    test.ui \
+    todolist.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

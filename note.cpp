@@ -180,6 +180,7 @@ void Note::on_showOtherNotesButton_clicked()
     }
 
     // 加载他人笔记
+    otherUserId = userId;  // 设置otherUserId
     otherUserSharing = true;
     loadOtherUserNotes(userId);
     ui->otherFileListView->setVisible(true);

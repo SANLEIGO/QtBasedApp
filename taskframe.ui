@@ -110,9 +110,9 @@
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QPushButton" name="pushButton">
            <property name="text">
-            <string>add</string>
+            <string>change</string>
            </property>
           </widget>
          </item>

@@ -2,6 +2,7 @@
     #include "ui_myregister.h"
     #include "databasemanager.h"
     #include<QDateTime>
+    #include"login.h"
 
 
     myregister::myregister(QWidget *parent)
@@ -89,6 +90,9 @@
 
             if(query.exec()){
                 QMessageBox::information(this,"注册提示","注册成功,点击为您跳转登录");
+                this->close();
+
+
 
             }
             else{
